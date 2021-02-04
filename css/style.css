@@ -1,0 +1,142 @@
+:root {
+    --blue: #1E90FF;
+    --blue-hover: #0066FF;
+    --light-pink: #f3e7e7;
+    --border-pink: #f0dada;
+    --black: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--light-pink);
+    font-family: 'Proxima Nova', 'Neue Helvetica';
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.instagram-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+}
+
+.instagram-cover img {
+    block-size: 600px;
+}
+
+.instagram-login {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.instagram-continue {
+    block-size: 325px;
+    width: 350px;
+    border: 2px solid var(--border-pink);
+    background: white;
+    margin-top: 40px;
+    margin-bottom: 7.5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.instagram-logo {
+    height: 17.5%;
+}
+
+.instagram-profile {
+    height: 30%;
+    border-radius: 50%;
+}
+
+.instagram-continue .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.button-continue,
+.button-remove {
+    height: 27.5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin-bottom: 15px;
+}
+
+.button-continue {
+    color: white;
+    background: var(--blue);
+}
+
+.button-remove {
+    color: var(--blue);
+    background: white;
+}
+
+.button-continue:hover {
+    background: var(--blue-hover);
+}
+
+.button-remove:hover {
+    color: var(--blue-hover);
+}
+
+.instagram-switch {
+    block-size: 90px;
+    width: 350px;
+    border: 2px solid var(--border-pink);
+    color: #d8a8a8;
+    text-align: center;
+    background: white;
+    padding-top: 6%;
+    margin-bottom: 20px;
+}
+
+.instagram-switch a {
+    color: var(--blue);
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s ease all;
+}
+
+.instagram-switch a:hover {
+    color: var(--blue-hover);
+}
+
+.instagram-app {
+    block-size: 90px;
+    width: 350px;
+    color: #c77878;
+    text-align: center;
+}
+
+.instagram-app-logos {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+.instagram-app-logos .apple-logo {
+    margin-right: 7.5px;
+}
+
+.apple-logo,
+.googleplay-logo {
+    cursor: pointer;
+}
